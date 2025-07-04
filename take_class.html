@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Class - Probability</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            /* display: flex;  */
+            height: 100vh; 
+            
+        }
+        .container{
+            display: flex;
+        }
+        .index-panel { 
+            width: 20%; 
+            background: #f4f4f4; 
+            padding: 20px; 
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+            height: 100%; 
+            overflow-y: auto; 
+        }
+        .index-panel h2 { 
+            margin-top: 0; 
+        }
+        .index-panel ul { 
+            list-style-type: none; 
+            padding: 0; 
+            color: #0c038e; 
+        }
+        .index-panel ul li { 
+            margin: 10px 0; 
+        }
+        .index-panel ul li a { 
+            text-decoration: none; 
+            color: #088b15; 
+            cursor: pointer; 
+        }
+        .index-panel ul li ul { 
+            list-style-type: none; 
+            padding-left: 20px; 
+            display: none; 
+        }
+        .index-panel ul li.active ul { 
+            display: block; 
+            padding: 15px;
+        }
+        .content-panel { 
+            width: 80%; 
+            padding: 20px; 
+            height: 100%; 
+            overflow-y: auto; 
+        }
+        .content-panel h1 { 
+            color: #088b15; 
+        }
+        .content-panel h2 { 
+            color: #333; 
+        }
+        .content-panel p { 
+            line-height: 1.6; 
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #088b15;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .feedback {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./image/ai_logo.png"></a>
+        </div>
+        <div>
+            <h1>StudyGenius AI--Probability</h1>
+        </div>
+        <div class="login">
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </div>
+    <div class="container">
+    <div class="index-panel">
+        <h2>Index</h2>
+        <ul>
+            <li><a onclick="toggleDropdown(event)">1) Introduction to Probability</a>
+                <ul>
+                    <li><a onclick="loadTopic('What is Probability?')">1.1) What is Probability?</a></li>
+                    <li><a onclick="loadTopic('Experiment, Sample Space, and Events')">1.2) Experiment, Sample Space, and Events</a></li>
+                    <li><a onclick="loadTopic('Random Experiments')">1.3) Random Experiments</a></li>
+                </ul>
+            </li>
+            <li><a onclick="toggleDropdown(event)">2) Types of Events</a>
+                <ul>
+                    <li><a onclick="loadTopic('Equally Likely Events')">2.1) Equally Likely Events</a></li>
+                    <li><a onclick="loadTopic('Simple and Compound Events')">2.2) Simple and Compound Events</a></li>
+                    <li><a onclick="loadTopic('Mutually Exclusive and Non-Mutually Exclusive Events')">2.3) Mutually Exclusive and Non-Mutually Exclusive Events</a></li>
+                    <li><a onclick="loadTopic('Independent and Dependent Events')">2.4) Independent and Dependent Events</a></li>
+                    <li><a onclick="loadTopic('Exhaustive Events')">2.5) Exhaustive Events</a></li>
+                </ul>
+            </li>
+            <li><a onclick="toggleDropdown(event)">3) Probability Laws and Theorems</a>
+                <ul>
+                    <li><a onclick="loadTopic('Addition Law of Probability')">3.1) Addition Law of Probability</a></li>
+                    <li><a onclick="loadTopic('Multiplication Law of Probability')">3.2) Multiplication Law of Probability</a></li>
+                    <li><a onclick="loadTopic('Complementary Events')">3.3) Complementary Events</a></li>
+                    <li><a onclick="loadTopic('Conditional Probability')">3.4) Conditional Probability</a></li>
+                    <li><a onclick="loadTopic('Bayes\' Theorem')">3.5) Bayes' Theorem</a></li>
+                </ul>
+            </li>
+            <li><a onclick="toggleDropdown(event)">4) Random Variables</a>
+                <ul>
+                    <li><a onclick="loadTopic('What is a Random Variable?')">4.1) What is a Random Variable?</a></li>
+                    <li><a onclick="loadTopic('Discrete and Continuous Random Variables')">4.2) Discrete and Continuous Random Variables</a></li>
+                    <li><a onclick="loadTopic('Probability Distribution')">4.3) Probability Distribution</a></li>
+                    <li><a onclick="loadTopic('Expected Value (Mean) of a Random Variable')">4.4) Expected Value (Mean) of a Random Variable</a></li>
+                    <li><a onclick="loadTopic('Variance and Standard Deviation')">4.5) Variance and Standard Deviation</a></li>
+                </ul>
+            </li>
+            <li><a onclick="toggleDropdown(event)">5) Probability Distributions</a>
+                <ul>
+                    <li><a onclick="loadTopic('Binomial Distribution')">5.1) Binomial Distribution</a></li>
+                    <li><a onclick="loadTopic('Poisson Distribution')">5.2) Poisson Distribution</a></li>
+                    <li><a onclick="loadTopic('Normal Distribution')">5.3) Normal Distribution</a></li>
+                    <li><a onclick="loadTopic('Uniform Distribution')">5.4) Uniform Distribution</a></li>
+                    <li><a onclick="loadTopic('Exponential Distribution')">5.5) Exponential Distribution</a></li>
+                </ul>
+            </li>
+            <li><a onclick="toggleDropdown(event)">6) Theorems and Properties in Probability</a>
+                <ul>
+                    <li><a onclick="loadTopic('Law of Total Probability')">6.1) Law of Total Probability</a></li>
+                    <li><a onclick="loadTopic('Central Limit Theorem')">6.2) Central Limit Theorem</a></li>
+                    <li><a onclick="loadTopic('Law of Large Numbers')">6.3) Law of Large Numbers</a></li>
+                </ul>
+            </li>
+            <li><a onclick="toggleDropdown(event)">7) Real-Life Applications of Probability</a>
+                <ul>
+                    <li><a onclick="loadTopic('Risk Assessment and Decision Making')">7.1) Risk Assessment and Decision Making</a></li>
+                    <li><a onclick="loadTopic('Queuing Theory')">7.2) Queuing Theory</a></li>
+                    <li><a onclick="loadTopic('Reliability Theory')">7.3) Reliability Theory</a></li>
+                    <li><a onclick="loadTopic('Insurance and Gambling')">7.4) Insurance and Gambling</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content-panel" id="content-panel">
+        <h1>Welcome to Probability Class</h1>
+        <p>Select a topic from the index to start learning.</p>
+    </div>
+</div>
+    <script>
+        function toggleDropdown(event) {
+            const parent = event.target.parentElement;
+            parent.classList.toggle('active');
+        }
+
+        function loadTopic(subtopic) {
+            fetch(`fetch_topic.php?subtopic=${encodeURIComponent(subtopic)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("content-panel").innerHTML = `<p>No data available for "${subtopic}".</p>`;
+                    } else {
+                        document.getElementById("content-panel").innerHTML = `
+                            <h1>${data.subtopic_name}</h1>
+                            <h2>Definition</h2>
+                            <p>${data.definition}</p>
+                            <h2>Usefulness</h2>
+                            <p>${data.usefulness}</p>
+                            <h2>Example Sums</h2>
+                            <p>${data.example_sums}</p>
+                            <h2>Question</h2>
+                            <p>${data.question}</p>
+                            <textarea id="answer-box" placeholder="Write your answer here..."></textarea>
+                            <button onclick="checkAnswer('${data.answer}')">Submit</button>
+                            <div id="feedback" class="feedback"></div>
+                        `;
+                    }
+                })
+                .catch(error => console.error('Error fetching topic:', error));
+        }
+
+        function checkAnswer(correctAnswer) {
+            const userAnswer = document.getElementById("answer-box").value.trim();
+            const feedback = document.getElementById("feedback");
+
+            if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                feedback.innerHTML = `<p class="correct">Correct! Well done!</p>`;
+            } else {
+                feedback.innerHTML = `<p class="incorrect">Incorrect. The correct answer is: ${correctAnswer}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+{
+    "Probability Basics": [
+        {
+            "question": "What is a Random Experiment?",
+            "answer": "An experiment in which all possible outcomes are known ahead of time, but the outcome of any particular trial cannot be predicted until it occurs. Example: Tossing a coin or rolling a die.",
+            "ai_followup": {
+                "question": "Can you provide an example of a Random Experiment??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! An experiment in which all possible outcomes are known ahead of time, but the outcome of any particular trial cannot be predicted until it occurs. Example: Tossing a coin or rolling a die."
+            }
+        },
+        {
+            "question": "What is a Sample Space?",
+            "answer": "A collection of all possible outcomes from a random experiment. It is denoted by 'S'. Example: The sample space for rolling a die is {1, 2, 3, 4, 5, 6}.",
+            "ai_followup": {
+                "question": "Can you provide an example of a Sample Space??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! A collection of all possible outcomes from a random experiment. It is denoted by 'S'. Example: The sample space for rolling a die is {1, 2, 3, 4, 5, 6}."
+            }
+        },
+        {
+            "question": "What is an Event in Probability?",
+            "answer": "An event is a subset of the sample space. It represents one or more outcomes of a random experiment.",
+            "ai_followup": {
+                "question": "Can you provide an example of an Event in Probability??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! An event is a subset of the sample space. It represents one or more outcomes of a random experiment."
+            }
+        },
+        {
+            "question": "What is a Simple Event?",
+            "answer": "A simple event consists of only one outcome from the sample space. Example: Getting a heads in a coin toss.",
+            "ai_followup": {
+                "question": "Can you provide an example of a Simple Event??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! A simple event consists of only one outcome from the sample space. Example: Getting a heads in a coin toss."
+            }
+        },
+        {
+            "question": "What is a Compound Event?",
+            "answer": "A compound event consists of multiple outcomes from the sample space. Example: Drawing a red card from a deck is a compound event as it includes hearts and diamonds.",
+            "ai_followup": {
+                "question": "Can you provide an example of a Compound Event??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! A compound event consists of multiple outcomes from the sample space. Example: Drawing a red card from a deck is a compound event as it includes hearts and diamonds."
+            }
+        },
+        {
+            "question": "What is Mutually Exclusive Events?",
+            "answer": "Two events are mutually exclusive if they cannot occur at the same time. Example: Getting heads and tails in a single coin flip.",
+            "ai_followup": {
+                "question": "Can you provide an example of Mutually Exclusive Events??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! Two events are mutually exclusive if they cannot occur at the same time. Example: Getting heads and tails in a single coin flip."
+            }
+        },
+        {
+            "question": "What are Independent Events?",
+            "answer": "Two events are independent if the occurrence of one does not affect the probability of the other occurring. Example: Rolling a die and flipping a coin are independent events.",
+            "ai_followup": {
+                "question": "Can you provide an example of  Independent Events??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! Two events are independent if the occurrence of one does not affect the probability of the other occurring. Example: Rolling a die and flipping a coin are independent events."
+            }
+        },
+        {
+            "question": "What is an Exhaustive Event?",
+            "answer": "A set of events is exhaustive if at least one event from the set always occurs in any experiment.",
+            "ai_followup": {
+                "question": "Can you provide an example of an Exhaustive Event??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! A set of events is exhaustive if at least one event from the set always occurs in any experiment."
+            }
+        }
+    ],
+    "Probability Theorems": [
+        {
+            "question": "What is Conditional Probability?",
+            "answer": "The probability of an event B occurring given that event A has already occurred is called conditional probability. It is given by: P(B | A) = P(A and B) / P(A), provided P(A) is not zero.",
+            "ai_followup": {
+                "question": "Can you provide an example of Conditional Probability??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! The probability of an event B occurring given that event A has already occurred is called conditional probability. It is given by: P(B | A) = P(A and B) / P(A), provided P(A) is not zero."
+            }
+        },
+        {
+            "question": "What is Bayes' Theorem?",
+            "answer": "Bayes' Theorem describes the probability of an event based on prior knowledge of conditions related to the event. It is given by: P(A | B) = [P(B | A) * P(A)] / P(B).",
+            "ai_followup": {
+                "question": "Can you provide an example of Bayes' Theorem??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! Bayes' Theorem describes the probability of an event based on prior knowledge of conditions related to the event. It is given by: P(A | B) = [P(B | A) * P(A)] / P(B)."
+            }
+        },
+        {
+            "question": "What is the Multiplication Rule of Probability?",
+            "answer": "If two events A and B are independent, the probability of both occurring is given by P(A and B) = P(A) * P(B).",
+            "ai_followup": {
+                "question": "Can you provide an example of the Multiplication Rule of Probability??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! If two events A and B are independent, the probability of both occurring is given by P(A and B) = P(A) * P(B)."
+            }
+        },
+        {
+            "question": "What is the Law of Total Probability?",
+            "answer": "If events E1, E2, ..., En form a partition of a sample space S, then for any event A: P(A) = \u03a3 P(Ei) * P(A | Ei), summed over all i.",
+            "ai_followup": {
+                "question": "Can you provide an example of the Law of Total Probability??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! If events E1, E2, ..., En form a partition of a sample space S, then for any event A: P(A) = \u03a3 P(Ei) * P(A | Ei), summed over all i."
+            }
+        },
+        {
+            "question": "What is Conditional Probability Theorem?",
+            "answer": "Conditional probability is the probability of event A occurring given that event B has already occurred.",
+            "formula": "P(A | B) = P(A and B) / P(B), provided P(B) \u2260 0",
+            "example": {
+                "question": "A box has 6 black and 4 white balls. Two balls are drawn one after another without replacement. What is the probability that both are black?",
+                "solution": "P(First black) = 6/10, P(Second black | First black) = 5/9. P(Both black) = (6/10) * (5/9) = 1/3."
+            }
+        },
+        {
+            "question": "What is the Addition Theorem of Probability?",
+            "answer": "The Addition Theorem states that the probability of either event A or event B occurring is given by: P(A or B) = P(A) + P(B) - P(A and B).",
+            "formula": "P(A \u222a B) = P(A) + P(B) - P(A \u2229 B)",
+            "example": {
+                "question": "In a class, 40% of students play football, 30% play basketball, and 10% play both. What is the probability that a randomly chosen student plays either football or basketball?",
+                "solution": "P(Football) = 0.4, P(Basketball) = 0.3, P(Both) = 0.1. P(Football or Basketball) = 0.4 + 0.3 - 0.1 = 0.6 (or 60%)."
+            }
+        }
+    ],
+    "Random Variables": [
+        {
+            "question": "What is a Random Variable?",
+            "answer": "A random variable is a numerical outcome of a random experiment. Example: The number of heads when flipping a coin twice.",
+            "ai_followup": {
+                "question": "Can you provide an example of a Random Variable??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! A random variable is a numerical outcome of a random experiment. Example: The number of heads when flipping a coin twice."
+            }
+        },
+        {
+            "question": "What is the Mean of a Random Variable?",
+            "answer": "The mean (expected value) of a random variable X is given by E(X) = \u03a3 [x * P(x)], where x is the value and P(x) is its probability.",
+            "ai_followup": {
+                "question": "Can you provide an example of the Mean of a Random Variable??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! The mean (expected value) of a random variable X is given by E(X) = \u03a3 [x * P(x)], where x is the value and P(x) is its probability."
+            }
+        },
+        {
+            "question": "What is the Variance of a Random Variable?",
+            "answer": "Variance measures the spread of a random variable. It is given by Var(X) = E(X\u00b2) - [E(X)]\u00b2.",
+            "ai_followup": {
+                "question": "Can you provide an example of the Variance of a Random Variable??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! Variance measures the spread of a random variable. It is given by Var(X) = E(X\u00b2) - [E(X)]\u00b2."
+            }
+        },
+        {
+            "question": "What is the Standard Deviation of a Random Variable?",
+            "answer": "The standard deviation is the square root of the variance. It measures how spread out the values of a random variable are.",
+            "ai_followup": {
+                "question": "Can you provide an example of the Standard Deviation of a Random Variable??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! The standard deviation is the square root of the variance. It measures how spread out the values of a random variable are."
+            }
+        },
+        {
+            "question": "What is the Expectation of a Continuous Random Variable?",
+            "answer": "For a continuous random variable X with probability density function f(x), the expectation is given by: E(X) = \u222b x f(x) dx over the range of X.",
+            "real_world_example": "The expected waiting time for a customer in a queue follows an exponential distribution, where shorter wait times are more likely, but longer wait times still have some probability.",
+            "formula": "E(X) = \u222b x f(x) dx",
+            "example_problem": {
+                "question": "The lifetime of an electronic component follows an exponential distribution with \u03bb = 1/2000 hours. Find the expected lifetime of the component.",
+                "solution": "For an exponential distribution, E(X) = 1/\u03bb = 1 / (1/2000) = 2000 hours."
+            }
+        },
+        {
+            "question": "What is the Expectation of a Function of a Random Variable?",
+            "answer": "If g(X) is a function of a random variable X, then the expectation of g(X) is given by: E[g(X)] = \u03a3 g(x) P(x) for discrete variables or \u222b g(x) f(x) dx for continuous variables.",
+            "real_world_example": "In insurance, if X represents the amount of damage in an accident and g(X) is the amount the company pays, then E[g(X)] helps determine expected payouts.",
+            "formula": "E[g(X)] = \u03a3 g(x) P(x) (discrete) or \u222b g(x) f(x) dx (continuous)",
+            "example_problem": {
+                "question": "A fair die is rolled. Let Y = X\u00b2, where X is the outcome. Find the expectation of Y.",
+                "solution": "E(Y) = \u03a3 [x\u00b2 * P(x)] = (1\u00b2 * 1/6) + (2\u00b2 * 1/6) + (3\u00b2 * 1/6) + (4\u00b2 * 1/6) + (5\u00b2 * 1/6) + (6\u00b2 * 1/6) = 15.167."
+            }
+        }
+    ],
+    "Probability Distributions": [
+        {
+            "question": "What is the Binomial Distribution?",
+            "answer": "A binomial distribution describes the probability of getting a fixed number of successes in a set number of trials, where each trial has two possible outcomes (success/failure). Formula: P(X=x) = C(n, x) * p^x * (1-p)^(n-x).",
+            "ai_followup": {
+                "question": "Can you provide an example of the Binomial Distribution??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! A binomial distribution describes the probability of getting a fixed number of successes in a set number of trials, where each trial has two possible outcomes (success/failure). Formula: P(X=x) = C(n, x) * p^x * (1-p)^(n-x)."
+            }
+        },
+        {
+            "question": "What is a Uniform Distribution?",
+            "answer": "A uniform distribution is a type of continuous probability distribution where all outcomes are equally likely within a given range [a, b]. The probability density function (PDF) is f(x) = 1 / (b - a) for a \u2264 x \u2264 b.",
+            "real_world_example": "The time taken for a bus to arrive at a bus stop between 8 AM and 9 AM is uniformly distributed. Each minute has an equal probability of arrival.",
+            "formula": "P(a \u2264 X \u2264 b) = (b - a) / (B - A)",
+            "example_problem": {
+                "question": "A continuous random variable X is uniformly distributed over [3, 7]. What is the probability that X is between 4 and 6?",
+                "solution": "P(4 \u2264 X \u2264 6) = (6 - 4) / (7 - 3) = 2/4 = 0.5."
+            }
+        },
+        {
+            "question": "What is a Normal Distribution?",
+            "answer": "A normal distribution is a continuous probability distribution that is symmetric about the mean. It follows a bell-shaped curve and is defined by the mean (\u03bc) and standard deviation (\u03c3).",
+            "real_world_example": "The heights of adults in a population follow a normal distribution with most people having an average height and fewer people at the extremes.",
+            "formula": "P(X \u2264 x) = \u222b (1 / (\u03c3\u221a(2\u03c0))) * e^(-(x - \u03bc)^2 / (2\u03c3^2)) dx",
+            "example_problem": {
+                "question": "The heights of students in a school are normally distributed with a mean of 165 cm and a standard deviation of 10 cm. What is the probability that a randomly selected student has a height between 155 cm and 175 cm?",
+                "solution": "Z = (X - \u03bc) / \u03c3. For X = 155, Z = (155 - 165) / 10 = -1. For X = 175, Z = (175 - 165) / 10 = 1. From normal tables, P(-1 \u2264 Z \u2264 1) \u2248 0.6826."
+            }
+        },
+        {
+            "question": "What is an Exponential Distribution?",
+            "answer": "An exponential distribution describes the time between events in a Poisson process, where events occur continuously and independently.",
+            "real_world_example": "The lifespan of light bulbs follows an exponential distribution, where most bulbs last close to their mean lifetime but some fail earlier or later.",
+            "formula": "P(X > x) = e^(-x/\u03bb)",
+            "example_problem": {
+                "question": "A light bulb's lifetime follows an exponential distribution with an average lifespan of 1000 hours. Find the probability that a randomly chosen bulb lasts at most 800 hours.",
+                "solution": "P(X \u2264 800) = 1 - e^(-800/1000) \u2248 1 - e^(-0.8) \u2248 0.5507."
+            }
+        }
+    ],
+    "Expectation & Variance": [
+        {
+            "question": "What is Mathematical Expectation?",
+            "answer": "Mathematical expectation (or expected value) of a random variable is the weighted average of all possible values that the variable can take, weighted by their respective probabilities.",
+            "real_world_example": "In a lottery where a person has a 1% chance of winning $100 and a 99% chance of losing $2, the expected winnings are: (0.01 * 100) + (0.99 * -2) = 1 - 1.98 = -0.98, meaning an average loss of $0.98 per game.",
+            "formula": "E(X) = \u03a3 [x * P(x)] for discrete variables, or \u222b x f(x) dx for continuous variables.",
+            "example_problem": {
+                "question": "A fair die is rolled. Let X be the outcome. Find the expected value of X.",
+                "solution": "E(X) = \u03a3 [x * P(x)] = (1 * 1/6) + (2 * 1/6) + (3 * 1/6) + (4 * 1/6) + (5 * 1/6) + (6 * 1/6) = 3.5."
+            }
+        }
+    ],
+    "Applied Probability Problems": [
+        {
+            "question": "What is the formula for Probability?",
+            "answer": "The probability of an event A occurring is given by: P(A) = (Number of favorable outcomes) / (Total number of possible outcomes).",
+            "ai_followup": {
+                "question": "Can you provide an example of the formula for Probability??",
+                "correct_answers": [
+                    "Example answer"
+                ],
+                "feedback_wrong": "That's incorrect! The probability of an event A occurring is given by: P(A) = (Number of favorable outcomes) / (Total number of possible outcomes)."
+            }
+        },
+        {
+            "question": "A coin is tossed 3 times. What is the probability of getting exactly 2 heads?",
+            "answer": "Total possible outcomes = 2^3 = 8. Favorable outcomes = {HHT, HTH, THH} = 3. Probability = 3/8.",
+            "ai_followup": {
+                "question": "If a coin is tossed 4 times, how many total outcomes are there?",
+                "correct_answers": [
+                    "16",
+                    "2^4",
+                    "Four tosses have 16 outcomes"
+                ],
+                "feedback_wrong": "Not quite! The total number of outcomes is 2^4 = 16."
+            }
+        },
+        {
+            "question": "A bag contains 5 red and 3 blue balls. One ball is drawn randomly. What is the probability of getting a blue ball?",
+            "answer": "Total balls = 5 + 3 = 8. Probability of blue = 3/8.",
+            "ai_followup": {
+                "question": "If the bag had 6 red and 4 blue balls, what would be the probability of drawing a red ball?",
+                "correct_answers": [
+                    "3/5",
+                    "6/10",
+                    "0.6"
+                ],
+                "feedback_wrong": "Try again! The correct answer is 6/10 or 3/5."
+            }
+        },
+        {
+            "question": "A die is rolled 5 times. What is the probability of getting exactly 2 sixes?",
+            "answer": "Using Binomial Probability Formula: P(X=2) = C(5,2) * (1/6)^2 * (5/6)^3 = 0.0321.",
+            "ai_followup": {
+                "question": "If a die is rolled 3 times, what is the probability of getting exactly 1 six?",
+                "correct_answers": [
+                    "0.347",
+                    "C(3,1) * (1/6) * (5/6)^2"
+                ],
+                "feedback_wrong": "Close! The correct answer is C(3,1) * (1/6) * (5/6)^2 \u2248 0.347."
+            }
+        },
+        {
+            "question": "A box has 6 black and 4 white balls. Two balls are drawn one after another without replacement. What is the probability that both are black?",
+            "answer": "P(First black) = 6/10. P(Second black | First was black) = 5/9. P(Both black) = (6/10) * (5/9) = 30/90 = 1/3."
+        },
+        {
+            "question": "There are two bags. Bag 1 contains 3 red and 4 blue balls. Bag 2 contains 5 red and 3 blue balls. A bag is randomly chosen, and a ball is drawn. If the ball is red, what is the probability it came from Bag 1?",
+            "answer": "P(Bag 1) = 1/2, P(Bag 2) = 1/2. P(Red | Bag 1) = 3/7, P(Red | Bag 2) = 5/8. Using Bayes\u2019 Theorem: P(Bag1 | Red) = (3/7 * 1/2) / ((3/7 * 1/2) + (5/8 * 1/2)) = 24/59."
+        },
+        {
+            "question": "A fair die is rolled 5 times. What is the probability of getting exactly 2 sixes?",
+            "answer": "Using Binomial Probability Formula: P(X = k) = C(n, k) * p^k * (1 - p)^(n - k). Where n = 5, k = 2, p = 1/6, 1 - p = 5/6. P(2 sixes) = C(5,2) * (1/6)^2 * (5/6)^3 = 10 * (1/36) * (125/216) = 250/7776. Final Answer: 0.0321 (~3.21%)."
+        },
+        {
+            "question": "A bag contains 6 red and 4 green balls. Two balls are drawn randomly. What is the probability that both are red?",
+            "answer": "P(First red) = 6/10, P(Second red | First red) = 5/9. P(Both red) = (6/10) * (5/9) = 30/90 = 1/3."
+        },
+        {
+            "question": "A fair coin is tossed 5 times. What is the probability of getting at least 3 heads?",
+            "answer": "Using Binomial Probability: P(X \u2265 3) = P(3) + P(4) + P(5). Using formula: P(X = k) = C(n, k) p^k (1 - p)^(n - k), P(3) = 10(1/2)^3(1/2)^2 = 10/32, P(4) = 5/32, P(5) = 1/32. Total = 16/32 = 0.5."
+        },
+        {
+            "question": "A class consists of 10 boys and 8 girls. Two students are selected at random. What is the probability that both are girls?",
+            "answer": "Total students = 18. P(First girl) = 8/18, P(Second girl | First was girl) = 7/17. P(Both girls) = (8/18) * (7/17) = 56/306 \u2248 0.183."
+        },
+        {
+            "question": "A number is chosen randomly from 1 to 100. What is the probability that it is divisible by 5?",
+            "answer": "Numbers divisible by 5 = {5, 10, 15, ..., 100}. Total = 20. P(Divisible by 5) = 20/100 = 1/5."
+        },
+        {
+            "question": "The probability of an earthquake occurring in a year is 0.02. What is the probability that an earthquake does not occur in 5 years?",
+            "answer": "Using Complement Rule: P(No earthquake) = (1 - 0.02)^5 = (0.98)^5 \u2248 0.9039."
+        },
+        {
+            "question": "A factory has 3 machines: A, B, and C. They produce 30%, 50%, and 20% of the total output respectively. The probability of a defective item from A, B, and C is 0.01, 0.02, and 0.05 respectively. If an item is defective, what is the probability it came from Machine B?",
+            "answer": "Using Bayes' Theorem: P(B | Defective) = [P(Defective | B) * P(B)] / [\u03a3 P(Defective | Machine) * P(Machine)]. P(B | Def) = (0.02 * 0.5) / [(0.01 * 0.3) + (0.02 * 0.5) + (0.05 * 0.2)] = 0.5."
+        },
+        {
+            "question": "A hospital receives 10 emergency cases per hour on average. What is the probability that exactly 7 cases occur in an hour?",
+            "answer": "Using Poisson Distribution: P(X = 7) = (e^(-10) * 10^7) / 7!. Approximate answer: 0.0902."
+        },
+        {
+            "question": "A die is rolled twice. What is the probability that the first roll is greater than the second roll?",
+            "answer": "Possible outcomes where first roll > second: {(2,1), (3,1), (3,2), (4,1), (4,2), (4,3), (5,1), (5,2), (5,3), (5,4), (6,1), (6,2), (6,3), (6,4), (6,5)} = 15 cases. Total outcomes = 36. P(First > Second) = 15/36 = 5/12."
+        },
+        {
+            "question": "A telephone line receives 5 calls per minute on average. What is the probability of receiving at most 3 calls in a minute?",
+            "answer": "Using Poisson Distribution: P(X \u2264 3) = P(0) + P(1) + P(2) + P(3). P(X = k) = (e^(-5) * 5^k) / k!. Summing values gives P(X \u2264 3) \u2248 0.265."
+        },
+        {
+            "question": "A committee of 4 members is to be selected from 6 men and 4 women. What is the probability that the committee has at least 2 women?",
+            "answer": "Total ways to choose 4 from 10 = C(10,4) = 210. Favorable cases: (2W,2M) + (3W,1M) + (4W,0M) = C(4,2)C(6,2) + C(4,3)C(6,1) + C(4,4)C(6,0). Total = (6*15 + 4*6 + 1*1) / 210 = 115/210 \u2248 0.548."
+        },
+        {
+            "question": "What is the Multiplication Theorem of Probability?",
+            "answer": "The Multiplication Theorem states that the probability of two independent events A and B occurring together is given by the product of their individual probabilities.",
+            "formula": "P(A and B) = P(A) * P(B) (for independent events)",
+            "example": {
+                "question": "A die is rolled and a coin is flipped. What is the probability of getting a 4 on the die and heads on the coin?",
+                "solution": "P(Die = 4) = 1/6, P(Heads) = 1/2. P(4 and Heads) = (1/6) * (1/2) = 1/12."
+            }
+        }
+    ]
+}

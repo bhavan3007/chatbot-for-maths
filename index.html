@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyGenius AI--Probability Unit</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        button {
+            padding: 10px 20px;
+            background: #088b15;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./image/ai_logo.png"></a>
+        </div>
+        <div>
+            <h1>StudyGenius AI--Probability</h1>
+        </div>
+        <div class="login">
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </div>
+    <!-- <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Pricing</a>
+        <a href="#">Features</a>
+        <a href="#">Partner</a>
+        <a href="#">More</a>
+        <a href="#">Login</a>
+    </div> -->
+    <div class="main-content">
+        <div class="left-panel">
+            <!-- <h2>Start Class</h2> -->
+            <button onclick="window.location.href='take_class.html'">Start Class</button>
+            
+            <!-- <h2> Start Practice</h2> -->
+            <button onclick="window.location.href='practice_with_ai.html'">Start Practice</button>
+        </div>
+        <div class="chat-container">
+            <h2>Probability Chatbot</h2>
+            <div class="chat-box" id="chat-box"></div>
+            <input type="text" id="user-input" class="input-box" placeholder="Ask a question...">
+            <button class="send-btn" onclick="sendMessage()">Submit</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; UNITY HACKERS.</p>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userMessage = document.getElementById("user-input").value;
+            if (userMessage.trim() === "") return;
+
+            var chatBox = document.getElementById("chat-box");
+            chatBox.innerHTML += "<p><b>You:</b> " + userMessage + "</p>";
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "chatbot.php", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    chatBox.innerHTML += "<p><b>Bot:</b> " + xhr.responseText + "</p>";
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }
+            };
+            xhr.send("message=" + encodeURIComponent(userMessage));
+
+            document.getElementById("user-input").value = "";
+        }
+    </script>
+</body>
+
+</html>

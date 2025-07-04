@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <h2 id="form-title">Login</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="switch-to-register">Register</a></p>
+            </form>
+
+            <form id="register-form" style="display: none;">
+                <input type="email" id="reg-email" placeholder="Email" required>
+                <input type="password" id="reg-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="./index.html" id="switch-to-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Toggle between Login & Register
+        document.getElementById("switch-to-register").addEventListener("click", function () {
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("register-form").style.display = "block";
+            document.getElementById("form-title").innerText = "Register";
+        });
+
+        document.getElementById("switch-to-login").addEventListener("click", function () {
+            document.getElementById("register-form").style.display = "none";
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("form-title").innerText = "Login";
+        });
+    </script>
+
+</body>
+
+</html>
